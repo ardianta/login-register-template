@@ -30,8 +30,16 @@
                             placeholder="E-mail atau Nomer Handphone" />
                     </div>
                     <div class="form-group">
-                        <label><input type="radio" name="gender" value="male" /> Laki-laki</label>
-                        <label><input type="radio" name="gender" value="female" /> Perempuan</label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="maleRadio" name="gender"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="maleRadio">Laki-Laki</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="femaleRadio" name="gender"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="femaleRadio">Perempuan</label>
+                        </div>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -45,8 +53,9 @@
                     <div class="form-group">
                         <input type="text" class="form-control" name="password2" placeholder="Konfirmasi Password" />
                     </div>
-                    <div class="form-group">
-                        <label><input type="checkbox" name="eula" /> Saya telah membaca dan menyetujui <a
+                    <div class="form-group custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="agreement" id="agreement" />
+                        <label class="custom-control-label" for="agreement"> Saya telah membaca dan menyetujui <a
                                 href="tos.html">Aturan Penggunaan</a>
                             dan <a href="privacy.html">Kebijakan Privasi</a> Ecomerce</label>
                     </div>
